@@ -37,7 +37,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0;
-    transition: box-shadow 0.3s ease;
 }
 
 .project-item:hover {
