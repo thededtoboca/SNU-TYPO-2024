@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Pretendard';
     src: url('./assets/Pretendard-Regular.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: light;
     font-style: normal;
   }
 @font-face {
@@ -22,6 +22,12 @@
     font-weight: bold;
     font-style: normal;
   }
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./assets/Pretendard-Medium.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 * {
     margin: 0;
@@ -32,10 +38,14 @@
 body {
     font-family: 'Pretendard', sans-serif;
     background: white;
-    font-weight: normal;
+    font-weight: light;
     padding: 40px;
 }
 
+strong {
+    font-weight: light ;
+    color: #222;
+}
 .container {
     max-width: 1600px;
     margin: 0 auto;
@@ -54,6 +64,7 @@ h1 {
     font-size: 64px;
     font-weight: bolder;
     margin-bottom: 50px;
+    align-self: center;
 }
 
 .expand-button {
@@ -62,19 +73,24 @@ h1 {
     background: none;
     cursor: pointer;
     font-size: 16px;
-    position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1000;
+    position:fixed;
 }
 
 #intro-paragraph {
     display: none;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 #intro-paragraph.expanded {
     display: block;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    color: #939393;
+    font-size: lighter;
 }
 
 .project-row {
@@ -116,9 +132,9 @@ h1 {
     text-align: right;
     margin-left: auto;
     font-size: 75%;
-    align-self: center;
     font-weight: bold;
     color: #939393;
+    align-self: self-end;
 }
 
 .project-image {
@@ -168,7 +184,7 @@ h1 {
 
 .modal-content {
     width: 55%;
-    height: 55%;
+    height: 70%;
     padding-bottom: 50px;
     position: relative;
     margin: 0 auto;
