@@ -69,16 +69,12 @@ h1 {
 }
 
 #intro-paragraph {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    margin: 0;
-    padding: 0 20px;
+    display: none;
+    transition: all 0.3s ease-in-out;
 }
 
 #intro-paragraph.expanded {
-    max-height: 500px; 
-    margin: 20px 0;
+    display: block;
 }
 
 .project-row {
@@ -212,6 +208,4 @@ h1 {
     display: block;
 }
 
-.hidden {
-    display: none; 
-}
+
