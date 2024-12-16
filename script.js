@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
             fullDescription: "Full project description 17...",
             studentName: "Student 17",
             studentId: "Student ID 17",
-            imageUrl: "./assets/17.jpg",  
+            imageUrl: "./assets/17.png",  
             projectUrl: "https://typo2024-17.glitch.me/"
         },
         {
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () =>  {
             fullDescription: "Full project description 19...",
             studentName: "Student 19",
             studentId: "Student ID 19",
-            imageUrl: "./assets/19.jpg",  
+            imageUrl: "./assets/19.png",  
             projectUrl: "https://typo2024-19.glitch.me/"
         },
         {
