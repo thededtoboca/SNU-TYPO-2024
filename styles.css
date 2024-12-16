@@ -77,7 +77,7 @@ h1 {
 .expand-button {
     font-family: inherit;
     border: none;
-    background: none;
+    background: white;
     cursor: pointer;
     font-size: 16px;
     position: relative;
