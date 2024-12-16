@@ -1,31 +1,52 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNU TYPOGRAPHY DESIGN 2024</title>
+    <title>SNU TYPO 2024</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>SNU TYPOGRAPHY DESIGN 2024</h1>
-    </header>
-    <main>
-        <div class="project-grid">
+    <div class="container">
+        <header>
+            <header>
+                <h1>타이포그래피 디자인 II</h1>
+                <button class="expand-button">과제 소개글</button>
+            </header>
+            <p id="intro-paragraph" class="hidden">프로젝트 3.
+                문자—수집—분류하기
+                
+                과제 소개
+                일상에서 본인의 관점에서 흥미로운 문자를 수집하고, 이를 분류하여 각자의 ‘문자 아카이브’를 웹페이지 형태로 완성합니다.
+                글자를 수집하는 주제는 자유롭게 선정하되 이를 설명할 수 있는 분류 체계를 정립합니다.
+                
+                예시.  메뉴판의 글자들 / 거리의 글자들 / 옛날 책에서 발견한 글자들 / 엘리베이터 버튼의 숫자들 / 내가 읽고 있는 책의 문장 부호들 / 건물에 붙어있는 글자들 / 창문의 글자들 / 읽을 수 없는 문자들…
+                
+                Thanks to
+                인쇄물 편집: 안수빈
+                미디어월 영상 편집: 하현정
+                웹페이지 제작: 우성
+                지킴이: 안수빈, 우성, 김설하, 하현정, 이재연
+                
+                수업 담당. 박고은
+                </p>
+            <main id="projects-container"></main>
+    </div>
+    <div class="modal">
+        <div class="modal-header">
+            <button class="nav-arrow prev">&lt;</button>
+            <h2></h2>
+            <button class="nav-arrow next">&gt;</button>
         </div>
-    </main>
-    <div id="overlay" class="overlay">
-        <div class="popup-container">
-            <button id="back-button">뒤로가기</button>
-            <div class="popup-content">
-                <iframe id="project-iframe" src="" frameborder="0"></iframe>
-                <div class="project-info">
-                    <h2 id="popup-title"></h2>
-                    <h3 id="popup-student"></h3>
-                    <p id="popup-description"></p>
-                </div>
-            </div>
+        <div class="modal-content">
+            <iframe frameborder="0"></iframe>
         </div>
+        <button class="home-button">
+            <svg viewBox="0 0 24 24">
+                <path fill="currentColor" d="M12 5L20 13H4L12 5z M4 13v7h16v-7"/>
+            </svg>
+            <span>전체목록</span>
+        </button>
     </div>
     <script src="script.js"></script>
 </body>
